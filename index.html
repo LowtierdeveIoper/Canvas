@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <base target="_blank" />
+    </head>
+    <body>
+        <h1><button style="cursor: pointer; background-color: rgb(255, 255, 255);">open FYGG</button></h1>
+        <h2>
+            <a
+                style="text-decoration: none; border: 2px solid rgb(255, 255, 255); background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); padding: 7px 14px; cursor: pointer; border-radius: 15px; text-align: center;"
+                href="https://github.com/LowTierDeveloper/FYGG/archive/refs/heads/main.zip"
+                download="index"
+            >
+                Alternatively, you can download it by clicking on me. (Recommended)
+            </a>
+        </h2>
+        <br />
+        <center style="color: white; font-size: 25px; font-family: 'Gill Sans'; border: 2px solid rgb(255, 255, 255); background-color: rgb(255, 255, 255); color: black; padding: 7px 14px;">
+            Created by <a style="text-decoration: none;" href="https://github.com/LowTierDeveloper" title="Click Me!">LowTierDeveloper</a>
+        </center>
+        <h3>
+                <a href="https://discord.gg/6r5FXKJT7K"><img src="https://discordapp.com/api/guilds/1050321856021942323/widget.png?style=banner4" alt="Discord Banner 4"/>
+
+            
+        </h3>
+        <script>
+            var urlObj = new window.URL(window.location.href);
+            var url = "https://empressoflightnohit.com/";
+
+            if (url) {
+                var win;
+
+                document.querySelector("button").onclick = function () {
+                    if (win) {
+                        win.focus();
+                    } else {
+                        win = window.open();
+                        win.document.body.style.margin = "0";
+                        win.document.body.style.height = "100vh";
+                        var iframe = win.document.createElement("iframe");
+                        iframe.style.border = "none";
+                        iframe.style.width = "100%";
+                        iframe.style.height = "100%";
+                        iframe.style.margin = "0";
+                        iframe.src = url;
+                        win.document.body.appendChild(iframe);
+                    }
+                    document.querySelector("button").style.background = "#FFFFFF";
+                    document.querySelector("button").innerHTML = "opened FYGG";
+                    setTimeout(document.querySelector("button").innerHTML = "open FYGG", 1000);
+                    window.close();
+                };
+            }
+        </script>
+
+        <style>
+            * {
+                background-color: rgb(255, 255, 255);
+                font-family: arial;
+                text-align: center;
+            }
+            button {
+                color: rgb(0, 0, 0);
+                width: 100px;
+                height: 80px;
+                border-radius: 12px;
+                background-color: #1f51ff;
+                font-family: Arial, Helvetica, sans-serif;
+                border: 1px solid rgb(0, 0, 0);
+                transition: background-color 500ms;
+            }
+            button:hover {
+                background-color: #ffffff;
+            }
+        </style>
+    </body>
+</html>
